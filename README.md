@@ -1,7 +1,7 @@
-# SQLLib
-## ÀÛ¼ºÀÚ : È²¹ÎÇõ
+ï»¿# SQLLib
+## ìž‘ì„±ìž : í™©ë¯¼í˜
 
-## °³¹ßÈ¯°æ
+## ê°œë°œí™˜ê²½
 - Windows 10
 - Visual Studio 2017, 2022
 - .NET Framework 3.5
