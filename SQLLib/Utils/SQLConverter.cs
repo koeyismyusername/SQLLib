@@ -23,7 +23,7 @@ namespace SQLLib.Utils
                 if (value == DBNull.Value || value is null)
                 {
                     if (columnAttribute.IsNullable) value = null;
-                    else throw new ArgumentNullException($"{property.Name}은 null일 수 없습니다.");
+                    else throw new ArgumentNullException(property.Name, $"{property.Name}은 null일 수 없습니다.");
                 }
 
                 property.SetValue(instance, value, null);
