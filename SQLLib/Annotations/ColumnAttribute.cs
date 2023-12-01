@@ -10,9 +10,11 @@ namespace SQLLib.Annotations
     {
         public string Name { get; private set; }
         public bool IsNullable { get; set; } = true;
+        public bool AutoGenerable { get; set; } = false;
+
         public ColumnAttribute(string name)
         {
-            if (string.IsNullOrEmpty(name)) throw new ArgumentException("name은 null이거나 비어있을 수 없습니다.");
+            if (string.IsNullOrEmpty(name)) throw new ArgumentException($"{nameof(name)}은 null이거나 비어있을 수 없습니다.");
             Name = name;
         }
     }
